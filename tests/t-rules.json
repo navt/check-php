@@ -1,0 +1,19 @@
+{
+    "minVersion": "5.5.0",
+    "funcs": [
+        "parse_ini_file",
+        "nofunc"
+    ],
+    "exts": [
+        "date",
+        "gd",
+        "json",
+        "noexten"
+    ],
+    "recomm": [
+        "ftp",
+        "memcache",
+        "zip",
+        "CURL"
+    ]
+}

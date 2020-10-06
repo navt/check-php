@@ -77,4 +77,8 @@ class CheckPHP {
         $this->info["recomm"] = $r->findRecommends()->review;
         return $this;
     }
+
+    public function getVar(string $name="") {
+        return isset($this->$name) ? $this->$name : null;
+    }
 }
