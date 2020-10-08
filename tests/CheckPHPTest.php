@@ -17,14 +17,14 @@ class CheckPHPTest extends TestCase {
         $ext->findRecommends();
 
         $gd = $ext->review["gd"];
-        $this->assertEquals($gd->name, "gd");
+        $this->assertSame($gd->name, "gd");
         $this->assertTrue($gd->exist);
         $this->assertNotNull($gd->version);
 
         $noexten = $ext->review["noexten"];
-        $this->assertEquals($noexten->name, "noexten");
+        $this->assertSame($noexten->name, "noexten");
         $this->assertFalse($noexten->exist);
-        $this->assertEquals($noexten->version, "-");
+        $this->assertSame($noexten->version, "-");
         $this->assertNotNull($noexten->msg);
     }
 
@@ -45,14 +45,13 @@ class CheckPHPTest extends TestCase {
         $ch->checkFuncs();
         
         $fun = $ch->info["funcs"]["nofunc"];
-        $this->assertEquals($fun->name, "nofunc");
+        $this->assertSame($fun->name, "nofunc");
         $this->assertFalse($fun->able);
     }
 
     public function testCheckNeeds() {
         $ch = new CheckPHP("t-rules.json");
         $ch->checkNeeds();
-
         
         $exts = $ch->info["needs"];
         $this->assertCount(4, $exts);
