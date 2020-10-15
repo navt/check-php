@@ -22,7 +22,8 @@ class CheckPHP {
             $this->$key = $value;
         }
     }
-    // проверка версии PHP
+    // проверка версии PHP, взято отсюда
+    // https://github.com/instantsoft/icms2/blob/master/install/steps/php.php#L30
     public function checkVersion() {
         $php = new stdClass();
         $php->version = implode('.', [PHP_MAJOR_VERSION, PHP_MINOR_VERSION, PHP_RELEASE_VERSION]);
