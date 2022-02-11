@@ -1,7 +1,7 @@
 {
-    "minVersion": "5.5.0",
+    "minVersion": "5.6.0",
     "funcs": [
-        "parse_ini_file"
+
     ],
     "exts": [
         "date",
@@ -11,14 +11,13 @@
         "mysqli",
         "session",
         "filter",
-        "fileinfo",
-        "iconv",
-        "SimpleXML"
+        "fileinfo"
     ],
     "recomm": [
         "ftp",
         "memcache",
         "zip",
-        "CURL"
+        "CURL",
+        "imagick"
     ]
 }
