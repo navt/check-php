@@ -11,7 +11,7 @@
 
 <h2>Требуемые функции</h2>
 <table>
-<tr class="h"><th>Требуемая функция</th><th>Может ли быть вызвана</th></tr>
+<tr class="h"><th>Требуемая функция</th><th>Определена</th></tr>
 <?php foreach ($funcs as $func): ?>
     <tr>
         <td class="e"><?php echo $func->name;?></td>

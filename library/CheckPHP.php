@@ -48,7 +48,7 @@ class CheckPHP {
             $features = new stdClass();
             $features->name = $func;
 
-            if (is_callable($func)) {
+            if (function_exists($func)) {
                 $features->able = true;
             } else {
                 $features->able = false;
